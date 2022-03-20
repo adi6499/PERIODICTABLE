@@ -4,7 +4,11 @@ box.forEach((b)=>{
      let voice = new SpeechSynthesisUtterance(e.target.textContent)
         window.speechSynthesis.cancel();
      speechSynthesis.speak(voice)
-
+   voice.rate = 1.5;
+     var synth = window.speechSynthesis;
+     var voices = synth.getVoices();
+    let randomVoice =Math.floor(Math.random() * voices.length);
+    voice.voice=voices[randomVoice]
        
     })
 })
