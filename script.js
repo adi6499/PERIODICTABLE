@@ -1,7 +1,7 @@
 let box = document.querySelectorAll(".box")
 box.forEach((b)=>{
     b.addEventListener("click",(e)=>{
-     let voice = new SpeechSynthesisUtterance(e.target.textContent)
+     let voice = new SpeechSynthesisUtterance(b.textContent)
         window.speechSynthesis.cancel();
      speechSynthesis.speak(voice)
    voice.rate = 0.5;
