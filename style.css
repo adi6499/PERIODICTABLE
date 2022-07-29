@@ -6,7 +6,9 @@
     text-transform: uppercase;
     font-family: sans-serif;
 }
-
+.box:hover{
+    cursor:pointer;
+}
 .contain {
     width: 100vw;
     height: 100vh;
